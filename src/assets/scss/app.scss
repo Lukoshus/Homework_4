@@ -1,0 +1,304 @@
+// Помощники
+@import 'mixins/mixins';//миксины scss
+@import 'main/stylesheet';// шрифты
+@import 'main/parameters';// переменные
+
+//Общее
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+@import 'main/common'; // общие стили
+@import 'main/grid'; // базовая 12ти колоночная сетка для сайта(сделана на основе bootstrap), классы .container/.row/.col-md-6 и т.д.
+
+//Компоненты(все файлы в папке components) -> добавляются автоматически в стили, импортить сюда их не нужно
+
+// дальше можно писать все стили сайта в этот файл, или писать их в компонентах
+
+body{
+    font-family: 'Poppins';
+}
+
+.container{
+    max-width: 1440px;
+}
+
+.header__wrapper{
+    background-image: url(../imgs/header__background.jpg);
+    background-position: center;
+}
+
+.wrapper__navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0px;
+    background: rgba(196, 196, 196, 0.1);
+}
+
+.wrapper__link{
+    display: flex;
+    align-items: center;
+}
+
+.link__logo{
+    width: 72px;
+    height: 72px;
+    background: #C8C8C8;
+    border-radius: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__text{
+    font-family: 'Rammetto One';
+    font-size: 20px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.link__text{
+    font-family: 'Roboto';
+    margin-left: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #505050;
+}
+
+.wrapper__nav{
+    margin-left: 160px;
+}
+
+.nav__list{
+    display: flex;
+}
+
+.list__item{
+    margin-right: 58px;
+}
+
+.item__link{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #717784;
+}
+
+.wrapper__button{
+    width: 234px;
+    height: 60px;
+    background: #9B9BCA;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.wrapper__button:hover{
+    background: #6a6a8a;
+}
+
+.wrapper__content{
+    padding-top: 196px;
+    padding-bottom: 112px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__box{
+    width: 45%;
+    margin-left: 10%;
+}
+
+.box__title{
+    font-family: 'DM Serif Display';
+    font-size: 56px;
+    line-height: 100%;
+    color: #696A86;
+    margin-bottom: 30px;
+}
+
+.box__text{
+    font-size: 18px;
+    line-height: 27px;
+    color: #696A86;
+    margin-bottom: 30px;
+}
+
+.box__btn{
+    width: 234px;
+    height: 60px;
+    background: #9B9BCA;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.box__btn:hover{
+    background: #6a6a8a;
+}
+
+.section__inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.inner__content{
+    margin-top: 95px; 
+    margin-bottom: 160px;
+    margin-left: 27%;
+    margin-right: 27%;
+}
+
+.content__title{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    color: #626780;
+    margin-bottom: 12px;
+}
+
+.content__text{
+    font-size: 18px;
+    line-height: 27px;
+    color: #626780;
+}
+
+.inner__box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+.first__img{
+    margin-bottom: 21px;
+}
+
+.first__title{
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #626780;
+}
+
+.first__text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #626780;
+}
+
+.second__image{
+    margin-bottom: 21px;
+}
+
+.second__title{
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #626780;
+}
+
+.second__text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #626780;
+}
+
+.third__image{
+    margin-bottom: 21px;
+}
+
+.third__title{
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #626780;
+}
+
+.third__text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #626780;
+}
+
+.fourth__image{
+    margin-bottom: 21px;
+}
+
+.fourth__title{
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #626780;
+}
+
+.fourth__text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #626780;
+}
+
+.box__first{
+    padding: 20px 10px;
+}
+
+.box__first:hover{
+    border: 2px solid #C4C4C4;
+    border-bottom: 7px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.box__second{
+    padding: 20px 10px;
+    margin-left: 10px;
+}
+
+.box__second:hover{
+    border: 2px solid #C4C4C4;
+    border-bottom: 7px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.box__third{
+    padding: 20px 10px;
+    margin-left: 10px; 
+}
+
+.box__third:hover{
+    border: 2px solid #C4C4C4;
+    border-bottom: 7px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.box__fourth{
+    padding: 20px 10px;
+    margin-left: 10px;
+}
+
+.box__fourth:hover{
+    border: 2px solid #C4C4C4;
+    border-bottom: 7px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+
+
+
