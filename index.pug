@@ -1,0 +1,59 @@
+extends layout/layout
+
+block vars
+    - var pageTitle = 'Главная страница'
+    - var pageBodyClass = 'homepage'
+    - var pageHeaderClass = ''
+
+block content
+    header.header     
+        .container 
+            .header__wrapper
+                .wrapper__navigation
+                    a(href="#").wrapper__link
+                        .link__logo 
+                            p.logo__text DW 
+                        p.link__text Dreammaker
+                    nav.wrapper__nav 
+                        ul.nav__list 
+                            li.list__item   
+                                a(href="#").item__link Home
+                            li.list__item   
+                                a(href="#").item__link About us
+                            li.list__item   
+                                a(href="#").item__link Service
+                            li.list__item   
+                                a(href="#").item__link Setting
+                    button.wrapper__button Contact us
+                .wrapper__content
+                    .content__box
+                        h1.box__title Your awesome Dream maker consultant 
+                        p.box__text The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.
+                        button.box__btn Get started
+    section.first 
+        .container 
+            .section__inner 
+                .inner__content 
+                    h1.content__title We provide great Service
+                    p.content__text The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.
+                .inner__box 
+                    .box__first 
+                        img(src="../assets/imgs/box__first.svg", alt="image").first__img
+                        h1.first__title Web design
+                        p.first__text Here you can find all web design and all of yours designing meterials
+                    .box__second 
+                        img(src="../assets/imgs/box__second.svg", alt="image").second__image
+                        h1.second__title Health and study
+                        p.second__text Here you can find all your primary health your good health and education
+                    .box__third 
+                        img(src="../assets/imgs/box__third.svg", alt="image").third__image
+                        h1.third__title Packaging
+                        p.third__text Consistency in packaging matter a lot. Give your attention match design elements
+                    .box__fourth 
+                        img(src="../assets/imgs/box__fourth.svg", alt="image").fourth__image
+                        h1.fourth__title Content writing
+                        p.fourth__text It can be understood that your fonts, sizes, headings, sub-headings, and button
+                    
+
+
+
